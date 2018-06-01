@@ -1,0 +1,21 @@
+#mandalaFrame {
+	width: 200%;
+	height: 150%;
+	border: none;
+	-ms-transform: scale(0.50);
+    -moz-transform: scale(0.50);
+    -o-transform: scale(0.50);
+    -webkit-transform: scale(0.50);
+    transform: scale(0.50);
+    
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    overflow: hidden;
+}
+
+body {
+	overflow: hidden;
+}

@@ -1,0 +1,61 @@
+/*
+** file: css/settings.css
+** description: custom styling for "html/settings.html" file
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+@keyframes color-fade-in {
+	from {background-color: #f2f2f2;}
+	to {background-color: #5895a9;}
+}
+
+body {
+	height: 430px;
+	background: #5895a9;
+	animation-name: color-fade-in;
+	animation-duration: 2.5s;
+	color: #ffffff;
+	font-family: 'Roboto';
+	font-weight: 300;
+}
+
+div#settings-jumbotron {
+	text-align: center;
+	width: 400px;
+	background: #5895a9;
+	border: 20px;
+	animation-name: color-fade-in;
+	animation-duration: 2.5s;
+}
+
+@keyframes font-fade-in {
+	from {color: #f2f2f2;}
+	to {color: #ffffff;}
+}
+
+div h5, p {
+	color: #ffffff;
+	
+	/*font-family: Pacifico;*/
+	animation-name: font-fade-in;
+	animation-duration: 2.5s;
+}
+
+input[type="checkbox"] {
+	margin-right: 8px;
+}
+
+.list-group-item .btn {
+	float: right;
+}
+
+#contacts-form {
+	width: 200px;
+	background: rgba(102, 102, 102, 0.5);
+}
+
+#contacts-list {
+	color: black;
+	width: 400px;
+}

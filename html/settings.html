@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<!-- load stylesheets: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/index.html -->
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link>
+
+		<!-- load icon stylesheet: Google Fonts Material Icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<!-- load javascript: jQuery 1.9.1 - http://jquery.com/ -->
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+		<!-- load javascript: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/ -->
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+		<!-- load stylesheets: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/index.html -->
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link>
+
+		<!-- load stylesheets: internal -->
+		<link rel="stylesheet" type="text/css" href="../css/global.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/settings.css"></link>
+	</head>
+	<body>
+		<a href="main.html" id="back-link"><button class="btn btn-link mx-auto"><i class="material-icons" style="color:white;">keyboard_arrow_left</i></button></a><br />
+		<div class="container-fluid text-center">
+			<div class="jumbotron-fluid pb-0 mx-auto" id="settings-jumbotron">
+				<h5 class="display-4">Settings</h5>
+			</div>
+
+			<div class="mx-auto pb-3 mb-2" id="contacts-form">
+				<p>Contacts</p>
+				<div class="row pb-2">
+					<div class="col input-group input-group-md">
+						<input type="text" id="contact-name" placeholder="Contact Name">
+					</div>
+				</div>
+				<div class="row pb-2">
+					<div class="col input-group input-group-md">
+						<input type="text" id="contact-phone" placeholder="Contact Phone Number">
+					</div>
+				</div>
+				<div class="row pb-2">
+					<div class="col">
+						<input type="checkbox" id="auto-contact"> Automatically contact in case of emergency?
+					</div>
+				</div>
+				<div class="row pb-2 mx-auto">
+					<a href="#" id="add-btn"><button class="btn btn-link"><i class="material-icons" style="color:white;">add</i></button></a>
+				</div>
+			</div>
+
+			<ul class="list-group mx-auto" id="contacts-list">
+			</ul>
+			<div class="pt-3 pb-5">
+				<span style="font-size: 12px"><input type="checkbox"> Do not disturb (Will turn off reassuron for 24 hours)</span>
+			</div>
+
+		</div>
+
+		<!-- load javascript: unique html page javascript file -->
+		<script type="text/javascript" src="../js/store.everything.min.js"></script>
+		<script type="text/javascript" src="../js/settings.js"></script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+/*
+** file: css/boosters.css
+** description: custom styling for "html/boosters.html" file
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@keyframes color-fade-in {
+    from {background-color: #f2f2f2;}
+    to {background-color: #87E2FF;}
+}
+
+body {
+    height: 430px;
+    background: #87E2FF;
+    animation-name: color-fade-in;
+    animation-duration: 2.5s;
+    color: #ffffff;
+    font-family: 'Roboto-Thin';
+}
+
+div#boosters-jumbotron {
+    text-align: center;
+    min-width: 400px;
+    background: #87E2FF;
+    border: 20px;
+    animation-name: color-fade-in;
+    animation-duration: 2.5s;
+}
+
+@keyframes font-fade-in {
+    from {color: #f2f2f2;}
+    to {color: #ffffff;}
+}
+
+div h5, p {
+    color: #ffffff;
+    font-family: "Roboto-Thin";
+    /*font-family: Pacifico;*/
+    animation-name: font-fade-in;
+    animation-duration: 2.5s;
+}
+
+#positivity-button {
+    width: 100px;
+}
+
+#buttons-container {
+    width: 200px;
+}
+

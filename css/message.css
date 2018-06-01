@@ -1,0 +1,59 @@
+/*
+** file: css/main.css
+** description: custom styling for "html/main.html" file
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+@keyframes color-fade-in {
+    from {background-color: #f2f2f2;}
+    to {background-color: #5895a9;}
+}
+
+body {
+    height:430px;
+    background: #5895a9;
+    animation-name: color-fade-in;
+    animation-duration: 3s;
+}
+
+div#message-jumbotron {
+    text-align: center;
+    width: 400px;
+    background: #5895a9;
+    border: 20px;
+    animation-name: color-fade-in;
+    animation-duration: 3s;
+}
+
+@keyframes font-fade-in {
+    from {color: #f2f2f2;}
+    to {color: #ffffff;}
+}
+
+div h1, p {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-weight: 300;
+    /*font-family: Pacifico;*/
+    animation-name: font-fade-in;
+    animation-duration: 2.5s;
+}
+
+#message-input {
+
+
+    width: 300px;
+
+
+}
+
+#subtitle {
+    font-size: 18pt;
+}
+
+
+
+div#main-inner {
+    padding: 8px;
+}

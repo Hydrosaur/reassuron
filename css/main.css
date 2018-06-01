@@ -1,0 +1,76 @@
+/*
+** file: css/main.css
+** description: custom styling for "html/main.html" file
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,900');
+
+@keyframes color-fade-in {
+	from {
+		background-color: #f2f2f2;
+	}
+	to {
+		background-color: #5895a9;
+	}
+}
+
+body {
+    animation-fill-mode: forwards;
+    animation-name: color-fade-in;
+    animation-duration: 2.5s;
+	display: flex;
+	align-items: center;
+	background-color: #5895a9;
+	justify-content: center;
+	height: 430px;
+}
+
+div#main-jumbotron {
+    text-align: center;
+    width: 400px;
+    background: #5895a9;
+    border: 20px;
+    animation-name: color-fade-in;
+    animation-duration: 1.5s;
+}
+
+@keyframes font-fade-in {
+	from {color: #f2f2f2;}
+	to {color: #ffffff;}
+}
+
+div h1 {
+	color: #ffffff;
+	font-family: 'Lato';
+	font-weight: 900;
+	font-size: 5rem;
+	/*font-family: Pacifico;*/
+	animation-name: font-fade-in;
+	animation-duration: 1.5s;
+}
+
+div p {
+	color: #ffffff;
+	font-family: 'Lato';
+	font-weight: 100;
+	/*font-family: Pacifico;*/
+	animation-name: font-fade-in;
+	animation-duration: 1.5s;
+}
+
+#quote {
+
+	font-size:20px;
+}
+
+#subtitle {
+	font-size: 18pt;
+}
+
+#buttons-container {
+	width: 280px;
+}
+
+div#main-inner {
+	padding: 8px;
+}

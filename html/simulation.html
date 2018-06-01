@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<!-- load stylesheets: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/index.html -->
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link>
+
+		<!-- load icon stylesheet: Google Fonts Material Icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		
+		<!-- load javascript: jQuery 1.9.1 - http://jquery.com/ -->
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+		<!-- load javascript: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/ -->
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+		<!-- load stylesheets: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/index.html -->
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link>
+
+		<!-- load stylesheets: internal -->
+		<link rel="stylesheet" type="text/css" href="../css/global.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/simulation.css"></link>
+	</head>
+	<body>
+		<a href="main.html">
+			<button id="positivity-button" class="btn btn-outline-light mx-auto">
+				<i class="material-icons">keyboard_arrow_left</i>
+			</button>
+		</a>
+		<br />
+		<div class="container">
+			<div class="jumbotron jumbotron-fluid pb-0 mx-auto" id="simulation-jumbotron">
+				<h5 class="display-4">Gravity Points</h5>
+			</div>
+
+			<div class="mx-auto pb-4">
+				<canvas id="c"></canvas>
+				<div class="info">Click to add gravity point.</div>
+			</div>
+
+		</div>
+
+		
+		<!-- load javascript: unique html page javascript file -->
+		<script type="text/javascript" src="../js/dat-gui.js"></script>
+		<script type="text/javascript" src="../js/simulation.js"></script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+/*
+** file: css/global.css
+** description: global stylesheet containing css definitions for elements across the entire chrome extension, styles
+**              unique to a single page should be defined in their own "page.html" file
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+
+div.page-title {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+div.page-subtitle {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+@keyframes color-fade-in {
+	from {background-color: #f2f2f2;}
+	to {background-color: #5895a9;}
+}
+
+body {
+	height: 430px;
+	background: #5895a9;
+	animation-name: color-fade-in;
+	animation-duration: 2.5s;
+	color: #ffffff;
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+div#settings-jumbotron {
+	text-align: center;
+	width: 400px;
+	background: #5895a9;
+	border: 20px;
+	animation-name: color-fade-in;
+	animation-duration: 2.5s;
+}
+
+div h5, p {
+	color: #ffffff;
+	font-family: 'Lato';
+}
+
+.list-group-item .btn {
+	float: right;
+}

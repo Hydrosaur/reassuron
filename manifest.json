@@ -1,0 +1,33 @@
+{
+	"name": "reassuron",
+	"version": "1.3",
+	"manifest_version": 2,
+	"description": "Chrome extension that does stuff.",
+	"icons": {
+		"19": "images/eye.png",
+		"38": "images/eye.png",
+		"128": "images/eye.png"
+	},
+	"permissions": [ "tabs" ],
+	"browser_action": {
+		"default_title": "reassuron",
+		"default_icon": {
+			"19": "images/eye.png",
+			"38": "images/eye.png"
+		},
+		"default_popup": "html/main.html"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": ["js/jquery.min.js", "js/content.js"]
+		}
+	],
+	"background": {
+		"scripts": ["js/background.js"]
+	},
+	"options_page": "html/settings.html",
+	"homepage_url": "http://google.com/"
+}

@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<!-- load stylesheets: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/index.html -->
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link>
+
+		<!-- load icon stylesheet: Google Fonts Material Icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<!-- load javascript: jQuery 1.9.1 - http://jquery.com/ -->
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+		<!-- load javascript: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/ -->
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+		<!-- load stylesheets: internal -->
+		<link rel="stylesheet" type="text/css" href="../css/global.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/message.css"></link>
+	</head>
+	<body>
+	<a href="main.html"><button id="positivity-button" class="btn btn-outline-light mx-auto"><i class="material-icons">keyboard_arrow_left</i></button></a><br />
+		<div class="container-fluid">
+			<div class="jumbotron jumbotron-fluid pb-0 mx-auto text-center" style="min-width: 400px;" id="message-jumbotron">
+				<h1 class="display-5">Message a Friend</h1>
+				
+			</div>
+			<div>
+				<div class="row text-center pb-3" id="contacts-container">
+					<div class="col offset-md-2">
+						<select id="contacts-select">
+							<option value = null >Select a friend... </option>
+						</select>
+					</div>
+				</div>
+				<div class="row text-center pb-3" >
+					<div class="col offset-md-2">
+						<textarea placeholder="Write your message..." id="message-input"></textarea><br />
+					</div>
+				</div>
+				<div class="row text-center pb-3" id='button-container'>
+					<div class="col offset-md-2">
+						<button type="button" class="btn btn-outline-light" id="msg-button">Send Message</button>
+						<p style="display:none" id="msgSent"> Message Sent </p>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- load javascript: store.js -->
+		<script type="text/javascript" src="../js/store.everything.min.js"></script>
+		<!-- load javascript: API access javascript file -->
+		<script type="text/javascript" src="../js/global.js"></script>
+		<!-- load javascript: unique html page javascript file -->
+		<script type="text/javascript" src="../js/message.js"></script>
+		<!-- load javascript: unique html page javascript file -->
+		<script type="text/javascript" src="../js/main.js"></script>
+	</body>
+</html>
